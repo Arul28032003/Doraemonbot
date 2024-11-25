@@ -7,10 +7,10 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content(" Draemon Ai: "+txt)
+    response = model.generate_content(" Chat Bot: "+txt)
     return response.text
 
-st.title("Welcome to Doraemon Ai")
+st.title("Welcome to Chat Bot")
 
 command = st.chat_input("How can I help you?")
 
